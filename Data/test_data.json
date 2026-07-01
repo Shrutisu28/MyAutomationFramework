@@ -1,0 +1,20 @@
+{
+  "Valid_User": {
+    "Username": "shruti.suman2k17@gmail.com",
+    "Password": "$Snoopy8210"
+  },
+  "Invalid_User": {
+    "Username": "shruti.suman2k17@gmail.com",
+    "Password": "$Snoopy82145"
+  },
+  "event_data": {
+    "search_text": "Holly",
+    "event_name": "Hollywood Monsoon Night"
+  },
+  "Event_Booking": {
+    "Full_Name": "Shruti Suman",
+    "Email": "shruti.suman2k17@gmail.com",
+     "Phone_number": "1234567891"
+
+  }
+}

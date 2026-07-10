@@ -1,12 +1,10 @@
-from Pages.Homepage import HomePage
-from Tests.test_Login import test_valid_login
+from Pages.home_page import HomePage
 
 
-def test_mybooking(page, test_data):
 
-    test_valid_login(page, test_data)
+def test_mybooking(test_page, test_data):
 
-    home_page = HomePage(page)
+    home_page = HomePage(test_page)
 
     event_page = home_page.browse_events()
 
@@ -15,9 +13,9 @@ def test_mybooking(page, test_data):
     )
 
     my_booking_page = booking_page.book_event(
-        test_data["Event_Booking"]["Full_Name"],
-        test_data["Event_Booking"]["Email"],
-        test_data["Event_Booking"]["Phone_number"]
+        test_data["event_booking"]["full_name"],
+        test_data["event_booking"]["email"],
+        test_data["event_booking"]["phone_number"]
     )
 
     my_booking_page.verify_booking(

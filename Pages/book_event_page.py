@@ -1,13 +1,13 @@
 from playwright.sync_api import expect
 
-from Pages.MyBookingpage import MyBookingsPage
+from Pages.my_booking_page import MyBookingsPage
 
 
 class BookEventPage:
     def __init__(self, page):
         self.page = page
 
-    def book_event(self, fullname, email, phonenumber):
+    def book_event(self, fullname, Email, phonenumber):
             self.page.get_by_placeholder("Your full name").fill(fullname)
             self.page.get_by_placeholder("you@email.com").fill(email)
             self.page.get_by_placeholder("+91 98765 43210").fill(phonenumber)

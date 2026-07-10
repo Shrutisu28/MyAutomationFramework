@@ -1,16 +1,13 @@
 
-from Pages.Homepage import HomePage
-from Tests.test_Login import test_valid_login
+from Pages.home_page import HomePage
 
+def test_homepage(test_page):
 
-def test_homepage(page, test_data):
-    test_valid_login(page, test_data)
-    eventpage=HomePage(page)
+    eventpage=HomePage(test_page)
     eventpage.browse_events()
 
-def test_nobooking(page, test_data):
-    test_valid_login(page, test_data)
-    bookingpage = HomePage(page)
+def test_nobooking(test_page):
+    bookingpage = HomePage(test_page)
     bookingpage.my_booking()
 
 

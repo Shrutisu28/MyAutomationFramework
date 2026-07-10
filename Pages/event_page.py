@@ -1,6 +1,6 @@
 from playwright.sync_api import expect
 
-from Pages.Bookeventpage import BookEventPage
+from Pages.book_event_page import BookEventPage
 
 
 class EventPage:

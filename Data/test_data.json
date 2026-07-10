@@ -1,20 +1,20 @@
 {
-  "Valid_User": {
-    "Username": "shruti.suman2k17@gmail.com",
-    "Password": "$Snoopy8210"
+  "valid_user": {
+    "username": "shruti.suman2k17@gmail.com",
+    "password": "$Snoopy8210"
   },
-  "Invalid_User": {
-    "Username": "shruti.suman2k17@gmail.com",
-    "Password": "$Snoopy82145"
+  "invalid_user": {
+    "username": "shruti.suman2k17@gmail.com",
+    "password": "$Snoopy82145"
   },
   "event_data": {
     "search_text": "Holly",
     "event_name": "Hollywood Monsoon Night"
   },
-  "Event_Booking": {
-    "Full_Name": "Shruti Suman",
-    "Email": "shruti.suman2k17@gmail.com",
-     "Phone_number": "1234567891"
+  "event_booking": {
+    "full_name": "Shruti Suman",
+    "email": "shruti.suman2k17@gmail.com",
+     "phone_number": "1234567891"
 
   }
 }

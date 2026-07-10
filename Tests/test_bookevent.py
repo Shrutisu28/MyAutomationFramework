@@ -1,15 +1,14 @@
-import pytest
 
-from Pages.Homepage import HomePage
-from Tests.test_Login import test_valid_login
+from Pages.home_page import HomePage
 
 
-def test_event_booking(page, test_data):
-    test_valid_login(page, test_data)
-    home = HomePage(page)
+
+def test_event_booking(test_page, test_data):
+
+    home = HomePage(test_page)
     eventpage=home.browse_events()
     bookingpage=eventpage.select_event(test_data["event_data"]["event_name"])
-    mybookingpage=bookingpage.book_event(test_data["Event_Booking"]["Full_Name"], test_data["Event_Booking"]["Email"], test_data["Event_Booking"]["Phone_number"])
+    mybookingpage=bookingpage.book_event(test_data["event_booking"]["full_name"], test_data["event_booking"]["email"], test_data["event_booking"]["phone_number"])
 
     mybookingpage.verify_booking(test_data["event_data"]["event_name"])
     mybookingpage.clear_all_bookings()
